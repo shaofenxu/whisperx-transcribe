@@ -1,6 +1,6 @@
 # whisperx-transcribe
 
-Batch-transcribe a folder of audio recordings with [WhisperX](https://github.com/m-bain/whisperX) — speech recognition, word-level alignment and speaker diarization — and compile the results into a single tidy, timestamped transcript ready for analysis.
+Batch-transcribe a folder of audio recordings with [WhisperX](https://github.com/m-bain/whisperX) – speech recognition, word-level alignment and speaker diarization – and compile the results into a single tidy, timestamped transcript ready for analysis.
 
 R drives the pipeline; WhisperX does the heavy lifting. Everything runs locally: your audio never leaves the machine.
 
@@ -48,7 +48,7 @@ conda activate whisperx
 pip install whisperx
 ```
 
-The pipeline calls WhisperX through `conda run`, so you do **not** need to activate the environment before running it — but `conda` does need to be on your PATH. If it isn't, set `conda_bin` in `CONFIG` to the full path of the conda executable, or install WhisperX so that `whisperx` is on the PATH and set `conda_env = NULL`.
+The pipeline calls WhisperX through `conda run`, so you do **not** need to activate the environment before running it – but `conda` does need to be on your PATH. If it isn't, set `conda_bin` in `CONFIG` to the full path of the conda executable, or install WhisperX so that `whisperx` is on the PATH and set `conda_env = NULL`.
 
 ### Hugging Face token (diarization only)
 
@@ -68,7 +68,7 @@ Speaker diarization uses [pyannote.audio](https://github.com/pyannote/pyannote-a
    export HF_TOKEN=hf_xxxxxxxxxxxxxxxxxxxx
    ```
 
-The token is never written into the code and never committed. It downloads model weights — no audio is uploaded. If you don't want speaker labels at all, set `diarize = FALSE` and skip this entirely.
+The token is never written into the code and never committed. It downloads model weights – no audio is uploaded. If you don't want speaker labels at all, set `diarize = FALSE` and skip this entirely.
 
 ---
 
@@ -92,7 +92,7 @@ Or from an R session, with the repository root as the working directory:
 source("run_pipeline.R")
 ```
 
-Before committing to a long run, try `dry_run = TRUE` — it prints the exact WhisperX commands (with the token redacted) without executing them.
+Before committing to a long run, try `dry_run = TRUE` – it prints the exact WhisperX commands (with the token redacted) without executing them.
 
 ---
 
