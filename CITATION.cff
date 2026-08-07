@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, and cite WhisperX."
+title: "whisperx-transcribe: batch audio transcription and diarization in R"
+abstract: >-
+  An R pipeline that batch-transcribes audio recordings with WhisperX,
+  including speaker diarization, and compiles the output into a single tidy,
+  timestamped transcript for analysis.
+authors:
+  - family-names: "Xu"
+    given-names: "Shaofen (Xiaofeng)"
+    orcid: "https://orcid.org/0009-0009-0598-7901"
+license: MIT
+repository-code: "https://github.com/shaofenxu/whisperx-transcribe"
+keywords:
+  - transcription
+  - speech recognition
+  - speaker diarization
+  - whisperx
+  - qualitative research
+  - R
+references:
+  - type: conference-paper
+    title: "WhisperX: Time-Accurate Speech Transcription of Long-Form Audio"
+    authors:
+      - family-names: Bain
+        given-names: Max
+      - family-names: Huh
+        given-names: Jaesung
+      - family-names: Han
+        given-names: Tengda
+      - family-names: Zisserman
+        given-names: Andrew
+    collection-title: "Proc. INTERSPEECH 2023"
+    year: 2023
+    start: 4489
+    end: 4493
+    doi: "10.21437/Interspeech.2023-78"

@@ -1,0 +1,52 @@
+# =============================================================================
+# Research data -- never commit.
+# Recordings and transcripts of identifiable people are personal data.
+# =============================================================================
+audio/
+output/
+logs/
+data/
+
+# Media
+*.mp3
+*.wav
+*.m4a
+*.mp4
+*.flac
+*.ogg
+*.opus
+*.aac
+*.wma
+
+# Transcripts and derived text
+*.srt
+*.vtt
+*.tsv
+*.csv
+*.json
+
+# ...but the small files that ship with the repository are fine
+!examples/*.csv
+!environment/*.yml
+
+# Secrets
+.Renviron
+.Rprofile
+.env
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

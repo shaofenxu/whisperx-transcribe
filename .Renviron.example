@@ -1,0 +1,10 @@
+# Copy this file to .Renviron (in this folder or in your home directory),
+# paste in your own token, and restart R.
+#
+# The token is only used to download the gated pyannote diarization models
+# from Hugging Face. No audio is uploaded. .Renviron is git-ignored.
+#
+# Create a READ token at https://huggingface.co/settings/tokens and accept the
+# terms for pyannote/segmentation-3.0 and pyannote/speaker-diarization-3.1.
+
+HF_TOKEN=hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
