@@ -168,7 +168,7 @@ logs/
 └── run_20260101_093000.log
 ```
 
-Because the raw JSON is kept, you can re-compile with different settings at any time without re-transcribing — see [Using the functions directly](#using-the-functions-directly).
+Because the raw JSON is kept, you can re-compile with different settings at any time without re-transcribing – see [Using the functions directly](#using-the-functions-directly).
 
 ### `transcript.csv`
 
@@ -219,17 +219,17 @@ segments <- read_whisperx_json("output/whisperx/interview_01.json")
 
 ## Things worth knowing
 
-**Runtime.** On CPU, `large-v2` runs at roughly real time or slower — an hour of audio can take an hour or more, and diarization adds to that. Use `small` or `medium` while you're testing the setup, and switch to `large-v2` for the real run. A CUDA GPU is an order of magnitude faster.
+**Runtime.** On CPU, `large-v2` runs at roughly real time or slower – an hour of audio can take an hour or more, and diarization adds to that. Use `small` or `medium` while you're testing the setup, and switch to `large-v2` for the real run. A CUDA GPU is an order of magnitude faster.
 
 **Diarization is the weak link.** Overlapping speech, cross-talk and quiet participants all cause errors, and speaker counts drift when several people sound similar. Constrain it with `min_speakers`/`max_speakers` whenever you can.
 
-**Whisper hallucinates on silence.** Long silences, background music and non-speech noise can produce fluent, entirely invented text — often a repeated stock phrase. Skim the output before you trust it.
+**Whisper hallucinates on silence.** Long silences, background music and non-speech noise can produce fluent, entirely invented text – often a repeated stock phrase. Skim the output before you trust it.
 
 **Nothing here replaces checking the transcript.** Timestamps exist so that any turn can be found in the audio in seconds. For anything that will be quoted or coded, verify against the recording.
 
 **Recording quality dominates everything else.** A table microphone in a quiet room beats any amount of model tuning.
 
-**Personal data.** Recordings of identifiable people are personal data. `.gitignore` excludes `audio/`, `output/` and common media and transcript formats by default — check it before your first commit, and keep audio out of the repository. Where consent or ethics approval limits how the material may be handled, note that the models are downloaded once and then run locally.
+**Personal data.** Recordings of identifiable people are personal data. `.gitignore` excludes `audio/`, `output/` and common media and transcript formats by default – check it before your first commit, and keep audio out of the repository. Where consent or ethics approval limits how the material may be handled, note that the models are downloaded once and then run locally.
 
 ---
 
@@ -266,4 +266,4 @@ And, if you used diarization:
 
 ## Licence
 
-MIT — see [LICENSE](LICENSE). WhisperX, Whisper and pyannote.audio carry their own licences.
+MIT – see [LICENSE](LICENSE). WhisperX, Whisper and pyannote.audio carry their own licences.
