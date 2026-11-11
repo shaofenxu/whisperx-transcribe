@@ -4,7 +4,7 @@ Batch-transcribe a folder of audio recordings with [WhisperX](https://github.com
 
 R drives the pipeline; WhisperX does the heavy lifting. Everything runs locally: your audio never leaves the machine.
 
-> This began as a set of scripts for transcribing a batch of recorded group discussions in a research project ([10.36399/gla.pubs.397771](10.36399/gla.pubs.397771)). It has been rewritten here as a general-purpose tool, with no project-specific content.
+> This began as a set of scripts for transcribing a batch of recorded group discussions in a research project ([10.36399/gla.pubs.397771](doi.org/10.36399/gla.pubs.397771)). It has been rewritten here as a general-purpose tool, with no project-specific content.
 
 ---
 
